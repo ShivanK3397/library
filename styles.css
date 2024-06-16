@@ -1,0 +1,107 @@
+body{
+    font-family: Roboto,sans-serif;
+    background-color:#fde68a;
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    font-family: inherit;
+    font-size: inherit;
+    display: block;
+}
+
+
+
+h1,h2{
+    display: flex;
+    justify-content: center;
+    background-color:#450a0a;
+    color: #fff;
+    padding: 8px 0px;
+}
+
+.new-book{
+    padding: 16px;
+    background-color: #450a0a;
+    color: #fff;
+    border-radius: 8px;
+    border: 2px solid;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.book-container{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 16px;
+    background-color: #f87171;
+    padding: 16px;
+
+}
+.book-display{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-direction: column;
+}
+::backdrop {
+    background-color: #fde68a;
+    opacity: 0.5;
+  }
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    outline: none;
+}
+
+.submit-button{
+    background-color: #2563eb;
+    color: #fff;
+    font-family: Roboto,sans-serif;
+    width:80px;
+    border-radius: 8px;
+    padding: 8px 0;
+}
+
+.submit-button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.delete-button{
+    background-color: #09090b;
+    color:#fff;
+    padding: 8px 16px;
+    margin-left: 32px;
+    border-radius: 8px;
+}
+
+.true::after{
+    content:"Read";
+}
+.true,.false{
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-left: 16px;
+}
+
+.true{
+    background-color: green;
+}
+
+.false{
+    background-color: red;
+}
+
+.false::after{
+    content:"Not Read";
+    
+}
