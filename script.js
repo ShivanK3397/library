@@ -2,12 +2,15 @@ const myLibrary = [];
 let bookIndex=0;
 
 
-function Book(title,author,pages,isRead){
+
+class Book{
+    constructor(title,author,pages,isRead){
     this.title=title;
     this.author=author;
     this.pages=pages;
     this.isRead=isRead;
     this.index=bookIndex;
+    }
 }
 
 
